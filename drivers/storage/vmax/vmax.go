@@ -21,15 +21,15 @@ import (
 const providerName = "VMAX"
 const jobTimeout = 30
 
-// The XtremIO storage driver.
+// The VMAX storage driver.
 type driver struct {
 	client *govmax.SMIS
-	// initiator        xtio.Initiator
+	// initiator        vmax.Initiator
 	// volumesSig       string
 	// lunMapsSig       string
 	// initiatorsSig    string
-	// volumesByNaa     map[string]xtio.Volume
-	// initiatorsByName map[string]xtio.Initiator
+	// volumesByNaa     map[string]vmax.Volume
+	// initiatorsByName map[string]vmax.Initiator
 	arrayID    string
 	volPrefix  string
 	instanceID string
